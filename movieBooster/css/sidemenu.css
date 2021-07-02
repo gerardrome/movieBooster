@@ -1,0 +1,196 @@
+:root{
+    --width: 300px;
+    --padding: 10px;
+    --bgColor: #1a1a1a;
+    --colorFont: #a9acac;
+    --colorMargin: #2c2d2d;
+    --hoverColor: #2c2c2c;
+    --width-collapsed: 70px;
+
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+.body-expanded{
+    margin-left: var(--width);
+}
+
+#side-menu{
+    transition: .3s;
+    background-color: var(--bgColor);
+    color: var(--colorFont);
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+#side-menu a{
+    color: white;
+    text-decoration: none;
+}
+#side-menu #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--colorMargin);
+}
+#side-menu #header #title{
+    box-sizing: border-box;
+}
+#side-menu #header #title, #side-menu #header #menu-btn{
+    vertical-align: middle;
+}
+#side-menu #header #menu-btn{
+    display: inline-block;
+    font-size: 50px;
+}
+#side-menu #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    /* width: var(--width-collapsed); */
+    box-sizing: border-box;
+}
+#side-menu #header #menu-btn:hover{
+    background-color: var(--hoverColor);
+}
+/* #side-menu #header #menu-btn .btn-option{
+    width: 100%;
+    margin-top: 20px;
+}  */
+
+#side-menu #profile{
+    border-bottom: solid 1px var(--colorMargin);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+#side-menu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+#side-menu #profile img{
+    transition: .3s;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+#side-menu #profile #photo,
+#side-menu #profile #user-name{
+    font-size: 24px;
+    padding: var(--padding) 0;
+    overflow: hidden;
+}
+
+#side-menu #menu-items{
+    overflow: hidden;
+}
+#side-menu #menu-items .item{
+    width: var(--width);
+}
+#side-menu #menu-items .item .icon{
+    display: inline-block;
+}
+#side-menu #menu-items .item .icon, 
+#side-menu #menu-items .item .title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#side-menu #menu-items a{
+    display: block;
+}
+#side-menu #menu-items .item a:hover{
+    background-color: var(--hoverColor);
+}
+#side-menu #menu-items .item .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    /* width: var(--width-collapsed); */
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+#side-menu #menu-items .item .icon i{
+    width: 100%;
+
+}
+#side-menu #menu-items .item .title{
+    padding: var(--padding) 0;
+}
+#side-menu #menu-items .item.separator{
+    height: 1px;
+    border-bottom: solid 1px var(--hoverColor);
+}
+
+.menu-expanded{
+    /* transition: 8ms; */
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.menu-expanded #header #menu-btn i{
+    display: inline;
+}
+.menu-expanded #header #title{
+    display: inline-block;
+    width: calc(100% - 80px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+.menu-expanded #header #title span{
+    width: calc(var(--width) - var(--width-collapsed) -5px);
+    /* overflow: hidden; */
+}
+.menu-expanded #profile #photo img{
+    transition: .4s;
+    width: 200px;
+}
+.menu-expanded #profile #name{
+    width: 100%;
+}
+
+.menu-collapsed{
+    /* transition: .4s; */
+    width: var(--width-collapsed);
+}
+.menu-collapsed #header #menu-btn i{
+    transition: 0.5s;
+    font-size: 50px;
+}
+.menu-collapsed #header #title{
+    transition: 1s;
+    display: none;
+}
+.menu-collapsed #profile #photo img{
+    transition: .3s;
+    border-radius: 50%;
+    width: 70%;
+    height: 37px;
+}
+.menu-collapsed #profile #user-name{
+    display: none;
+}
+.menu-collapsed .item{
+    width: 100px;
+}
+.menu-collapsed #menu-items .title span{
+    background: crimson;
+    display: none;
+}
+
+.body-expanded{
+    transition: 0.4s;
+    margin-left: var(--width);
+}
+
+#main-container{
+    color: whitesmoke;
+}
+
+#main-container{
+    color: var(--bgColor);
+}

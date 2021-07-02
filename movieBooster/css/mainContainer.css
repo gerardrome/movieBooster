@@ -1,0 +1,19 @@
+#main-container{
+   padding: 50px;
+   display: inline-flex;
+}
+#card-movie{
+   margin-left: 50px;
+   margin-top: 50px;
+}
+#card-movie .plus-btn{
+   color: blue;
+   font-size: 20px;
+   float: right;
+   
+}
+
+
+
+
+

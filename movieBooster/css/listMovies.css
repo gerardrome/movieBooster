@@ -1,0 +1,46 @@
+#main-container{
+	padding: 50px;
+	display: inline-flex;
+}
+
+#card-movie{
+	width: 25rem;
+	height: 45rem;
+   margin-left: 100px;
+	margin-right: 50px;
+   margin-top: 50px;
+	box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
+}
+#card-movie .favorite-btn{
+	color: #9a9a9a;
+	float: right;
+	font-size: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+#card-movie .favorite-btn:hover{
+	color: #cd2d28;
+}
+#card-movie #title-movie{
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#card-movie #img-movie{
+	margin-bottom: 20px;
+	text-align: center;
+	border-bottom: solid 1px #9a9a9a;
+}
+#card-movie #img-movie img{
+	max-width: 18rem;
+	max-height: 22rem;
+	margin-bottom: 20px;
+}
+.movie-data{
+	display: block;
+}
+#subtitulo{
+	font-weight: bold;
+	font-size: 20px;
+}

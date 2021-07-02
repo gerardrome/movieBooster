@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../css/addMovie.css">
+	<link rel="stylesheet" href="../../../css/sidemenu.css">
+	<link rel="stylesheet" href="../../../css/navbar.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<!-- navbar & sidemenu -->
+	</header>
+	<div id="main-container">
+		<h2>ADD MOVIE</h2>
+
+		<form id="movieForm" action="">
+				
+			<div class="form-group">
+				<label for="exampleInputPassword1" class="form-label mt-4">TITLE MOVIE</label>
+				<input id="name-movie" name="name" type="text" class="form-control" placeholder="">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputPassword1" class="form-label mt-4">SUB-TITLE</label>
+				<input id="name-movie" name="subname" type="text" class="form-control" placeholder="">
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleSelect1" class="form-label mt-4">CATEGORY</label>
+				<select id="category-select" name="category-select" class="form-select">
+						<option>Science fiction</option>
+						<option>Drama</option>
+						<option>Animated</option>
+						<option>Suspense</option>
+						<option>Terror</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleSelect1" class="form-label mt-4">CLASSIFICATION</label>
+				<select id="classification-select" name="classification-select" class="form-select">
+						<option>AA</option>
+						<option>A</option>
+						<option>B</option>
+						<option>B15</option>
+						<option>C</option>
+						<OPtion>D</OPtion>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="formFile" class="form-label mt-4">POSTER MOVIE</label>
+				<input id="img-movie" name="posterMovie" class="form-control" type="file">
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleTextarea" class="form-label mt-4">SYNOPSIS</label>
+				<textarea id="synopsis-movie" name="synopsis-movie" class="form-control" rows="3"></textarea>
+			</div>
+
+			<button id="btn-submit" type="submit" class="btn btn-dark">add movie</button>
+				
+		</form>
+	</div>
+
+	<br>
+	<br>
+	
+	<script src="../../../js/navbar.js"></script>
+	<script src="../../../js/sidemenu.js"></script>
+	<script src="../../../js/movies/addMovieUI.js" type="module"></script>
+	<script src="../../../js/models/movieModel.js" type="module"></script>
+</body>
+</html>

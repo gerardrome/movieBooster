@@ -1,0 +1,18 @@
+#main-container{
+	width: 1000px;
+	padding: 50px;
+	margin-left: 20%;
+	border: solid 1px #121212;
+	margin-top: 60px;
+	border-radius: 2px;
+	box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.1);
+	background: white;
+}
+#title-form{
+    text-align: center;
+	margin-bottom: 30px;
+}
+
+.tr-contain{
+    text-align: center;
+}

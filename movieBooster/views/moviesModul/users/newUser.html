@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../css/newUser.css">
+	<link rel="stylesheet" href="../../../css/sidemenu.css">
+	<link rel="stylesheet" href="../../../css/navbar.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<!-- navbar & sidemenu -->
+	</header>
+	<div id="main-container">
+		<h2 id="title-form">NEW USER</h2>
+
+		<form id="userForm" action="">
+				
+			<div class="form-group">
+				<label for="exampleInputPassword1" class="form-label mt-4">USER NAME</label>
+				<input id="name-user" name="name" type="text" class="form-control" placeholder="">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputPassword1" class="form-label mt-4">EMAIL</label>
+				<input id="email-user" name="email" type="text" class="form-control" placeholder="">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputPassword1" class="form-label mt-4">PASSWORD</label>
+				<input id="password" name="password" type="password" class="form-control" placeholder="">
+			</div>
+						
+			<button id="btn-submit" type="submit" name="submit" class="btn btn-dark">add user</button>
+				
+		</form>
+	</div>
+
+	<br>
+	<br>
+	
+	<script src="../../../js/navbar.js"></script>
+	<script src="../../../js/sidemenu.js"></script>
+	<script src="../../../js/users/newUser.js" type="module"></script>
+	<script src="../../../js/models/userModel.js" type="module"></script>
+</body>
+</html>
