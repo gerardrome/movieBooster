@@ -16,3 +16,8 @@
 .tr-contain{
     text-align: center;
 }
+
+.bi{
+	margin-left: 15px;
+	cursor: pointer;
+}
