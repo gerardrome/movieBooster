@@ -16,7 +16,7 @@ class UserList{
 					<td>${element.correo}</td>
 					<td>
 						<i class="bi bi-trash" name="${element.id}"></i>
-						<i class="bi bi-pencil-square"></i>
+						<i class="bi bi-pencil-square" value="${element.id}"></i>
 					</td>
 				</tr>
 			`;
@@ -42,11 +42,12 @@ class UserList{
 	initEvent(){
 		this.containerUsers.addEventListener('click', e =>{
 			// e.preventDefault();
-			if (e.target.attributes[1]) {
-				const idClick = e.target.attributes[1].value;
-				this.deleteUser(idClick)
-				// console.log('diste click', e.target.attributes[1].value);
-				
+			if (e.target.attributes.name) {
+				// const idClick = e.target.attributes[1].value;
+				// this.deleteUser(idClick)
+				console.log('diste click eliminar', e.target.attributes.name);
+			}else if (e.target.attributes.value) {
+				console.log('diste click en editar', e.target.attributes.value);
 			}
 		})
 	}

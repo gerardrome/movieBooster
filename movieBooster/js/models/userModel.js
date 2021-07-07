@@ -22,7 +22,7 @@ export class UserService{
 		})
 					.then(response => response.json())
 					.then(data => data)
-	}
+	};
 
 	allUsers(){
 		return fetch('/api-movieBooster/usersListController.php')
