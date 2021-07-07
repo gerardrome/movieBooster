@@ -1,23 +1,14 @@
 <?php
-	$inclu = include 'connection-mysql.php';
-	// $DB = new MySQLconnection();
-	// $connection = $DB->connectionDB();
-	// if ($inclu) {
-	// 	$consulta = "SELECT * FROM usuarios";
-	// 	$resultado = mysqli_query($connection,$consulta);
-	// 	if ($result) {
-	// 		while ($row = $resultado->fetch_array()) {
-	// 			$id = $row['id'];
-	// 			$nombre = $row['nombre'];
-	// 			$correo = $row['correo'];
-	// 			echo json_encode($nombre);
-	// 		}
-	// 	}
-	// }
+$inclu = include 'connection-mysql.php';
 $DB = new MySQLconnection();
 $connection = $DB->connectionDB();
 
+$idUser = $_POST;
+	
 $sql = "SELECT id, nombre, correo FROM usuarios";
+$sqlDelete = "DELETE FROM usuarios WHERE id = $idUser";
+
+
 $result = $connection->query($sql);
 $response = [
 	'status' => '',
@@ -40,6 +31,7 @@ if ($result) {
 	echo json_encode($response);
 
 }
+
 	
 	
 // if () {

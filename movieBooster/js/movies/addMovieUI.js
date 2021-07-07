@@ -5,11 +5,6 @@ import {MovieService} from "../models/movieModel.js"
 class AddMovie {
    movie;
    movieService;
-   // nameMovieUI = document.querySelector('#name-movie').value;
-   // categoryUI = document.querySelector('#category-select').value;
-   // classificationUI = document.querySelector('#classification-select').value;
-   // imagenMovieUI = document.querySelector('#img-movie').value;
-   // synopsisMovieUI = document.querySelector('#synopsis-movie').value;
    btnSubmit = document.querySelector('#btn-submit');
    // seleccionamos la etiqueta form para poder hacer uso de todos los datos del formulario
    formUI = document.querySelector('#movieForm');

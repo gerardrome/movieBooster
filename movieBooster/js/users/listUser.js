@@ -3,7 +3,9 @@ import {UserService} from "../models/userModel.js";
 class UserList{
 	usersService = new UserService();
 	containerUsers = document.querySelector('#body-table');
-	constructor(){}
+	constructor(){
+		this.initEvent();
+	}
 
 	printUsers(users){
 		users.forEach(element => {
@@ -13,7 +15,7 @@ class UserList{
 					<td>${element.nombre}</td>
 					<td>${element.correo}</td>
 					<td>
-						<i class="bi bi-trash"></i>
+						<i class="bi bi-trash" name="${element.id}"></i>
 						<i class="bi bi-pencil-square"></i>
 					</td>
 				</tr>
@@ -30,9 +32,25 @@ class UserList{
 			this.printUsers(usersList);
 		}
 		console.log('response', usersList);
+	};
+
+	 deleteUser(id) {
+		this.usersService.selectUser(id);
+		console.log('diste click eliminar --->', id);
+	};
+
+	initEvent(){
+		this.containerUsers.addEventListener('click', e =>{
+			// e.preventDefault();
+			if (e.target.attributes[1]) {
+				const idClick = e.target.attributes[1].value;
+				this.deleteUser(idClick)
+				// console.log('diste click', e.target.attributes[1].value);
+				
+			}
+		})
 	}
 
-	
 };
 
 const usuarios = new UserList()

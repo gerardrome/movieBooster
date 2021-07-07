@@ -8,6 +8,7 @@
 	$password = $_POST['password'];
 
 	$sql = "INSERT INTO usuarios (nombre, correo, password) VALUES ('$name', '$email', '$password')";
+	// $sqlId = "DELETE FROM usuarios WHERE id = 2";
 
 
 	if (empty($name)) {
